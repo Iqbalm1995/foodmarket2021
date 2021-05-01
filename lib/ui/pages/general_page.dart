@@ -44,7 +44,12 @@ class GeneralPage extends StatelessWidget {
                          Container(
                            width: 24,
                            height: 24,
-                           child: Text('<'),
+                           margin: EdgeInsets.only(right: 26),
+                           decoration: BoxDecoration(
+                             image: DecorationImage(
+                                 image: AssetImage('assets/back_arrow.png')
+                             )
+                           ),
                          ) : SizedBox(),
                          Column(
                            crossAxisAlignment: CrossAxisAlignment.start,
@@ -57,7 +62,7 @@ class GeneralPage extends StatelessWidget {
                                ),
                              ),
                              Text(
-                               title,
+                               subtitle,
                                style: GoogleFonts.poppins(
                                    color: "8D92A3".toColor(), fontWeight: FontWeight.w300
                                ),

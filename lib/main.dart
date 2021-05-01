@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: GeneralPage(
         onBackButtonPressed: () {},
+        child: Text("body"),
       ),
     );
   }
